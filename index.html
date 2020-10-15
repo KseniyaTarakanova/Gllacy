@@ -18,35 +18,30 @@
         </div>
         
         <ul class="site-navigation style">
-          <li class="menu-item indent"><a href="#">Каталог</a>
-            <!-- <ul class="sub-menu style">
-              <li><a href="#">Новинки</a></li>
-              <li><a href="catalog.html">Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лед</a></li>
-              <li><a href="#">Мелорин</a></li>
-            </ul> -->
-          </li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li class="indent"><a href="#">О компании</a></li>
+          <li class="menu-item"><a href="#" class="indent">Каталог</a></li>
+          <li class="menu-item"><a href="#">Доставка и оплата</a></li>
+          <li class="menu-item"><a href="#">О компании</a></li>
         </ul>
 
         <div class="for-user">
           <div class="user-navigation style">
             <ul class="for-user-navigation">
               <li>
-                <a class="site-loupe" href="#"></a>
-                <!-- <img src="/svg/loupe.svg" width="17" height="17" alt="Лупа"> -->
-                <!--Форма для ввода текста-->
+                <a class="site-loupe" href="#">
+                  <div class="modal modal-loupe">
+                    <form class="search" action="#" method="POST">
+                      <h2 class="visually-hidden">Поиск</h2>
+                      
+                      <input class="input" type="text" name="input" placeholder="Крем-брюле"><br>
+                    </form>
+                  </div>
+                </a>  
               </li>
               <li class="user-information">
                 <a class="login-link" href="login.html">Вход</a>
-                <!-- <img src="/svg/entrance.svg" width="20" height="19"> -->
-                <!--Форма для авторизации-->
               </li>
               <li class="user-information">
                 <a class="site-basket" href="basket.html">Пусто</a>
-                <!-- <img src="/svg/basket.svg" width="21" height="20" alt="Корзина"> -->
               </li>
             </ul>
           </div>
@@ -253,9 +248,8 @@
         <h2 class="visually-hidden">Адрес на карте</h2>
 
         <div class="address-map">
-          <img src="/svg/pin.svg" width="80" height="140" alt="Булавка">
-          <!-- <img src="/img/map.png" width="800" height="430" alt="Офис компании по адресу -->
-          <!-- ул.Большая Конюшенная 19/8, Санкт-Петербург"> -->
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCQ366q3cD" 
+            width="1200" height="430"></iframe>
         </div>
 
         <h2 class="visually-hidden">Форма обратной связи</h2>
@@ -281,7 +275,6 @@
 
       <div class="documents">
         <p>
-          <!-- <img src="/svg/heart.svg" width="15" height="13" alt="Сердце"> -->
           <a class="for-providers" href="#">Для поставщиков</a><br>
           <a href="#">О производстве</a>
         </p> 
@@ -299,34 +292,44 @@
       </div>
     </footer>
 
-    <section class="modal modal-login">
+    <section class="modal modal-menu">
+      <h2 class="visually-hidden">Подменю</h2>
+
+      <ul class="sub-menu style">
+        <li><a href="#">Новинки</a></li>
+        <li><a href="catalog.html">Сливочное</a></li>
+        <li><a href="#">Щербеты</a></li>
+        <li><a href="#">Фруктовый лед</a></li>
+        <li><a href="#">Мелорин</a></li>
+      </ul>
+    </section>
+
+    <section class="modal modal-input">
       <h2 class="visually-hidden">Личный кабинет</h2>
 
       <input class="input" type="text" placeholder="email@example.com"><br>
-      <input class="input" type="password" placeholder="........"><br>
+      <input class="input" type="password" placeholder="········"><br>
       <button class="button" type="button">Войти</button>
-      <a href="#">Забыли пароль?</a>
-      <a href="#">Новая регистрация</a>
+      <div class="modal-input-help">
+        <a href="#">Забыли пароль?</a>
+        <a href="#">Новая регистрация</a>
+      </div>
     </section>
 
-    <section class="modal site-loupe search">
-      <h2 class="visually-hidden">Поиск</h2>
-
-      <input class="input" type="text" placeholder="Крем-брюле"><br>
-    </section>
-
-    <section class="feedback">
+    <section class="modal modal-login">
       <h2 class="visually-hidden">Обратная связь</h2>
 
       <h3>Мы обязательно вам ответим!</h3>
-      <button type="button" class="feedback-close">Закрыть</button>
-      <form class="feedback-form" action="#" method="POST">
-        <input class="input" type="text" placeholder="Имя Фамилия"><br>
-        <input class="input" type="text" placeholder="email@example.com"><br>
-        <input class="input" type="text" placeholder="В свободной форме"><br>
+      <button type="button" class="modal-login-close"></button>
+      <form class="feedback-form" action="https://mail.yandex.ru/" method="POST">
+        <input class="input" type="text" name="login" placeholder="Имя Фамилия"><br>
+        <input class="input" type="text" name="email" placeholder="email@example.com"><br>
+        <textarea class="input" type="text" name="field" placeholder="В свободной форме"></textarea><br>
         <button class="button feedback-button" type="submit">Отправить</button>
       </form>
       
     </section>
+
+    <script src="/js/site.js"></script>
   </body>
 </html>
