@@ -41,7 +41,7 @@
                 <a class="login-link" href="login.html">Вход</a>
               </li>
               <li class="user-information">
-                <a class="site-basket" href="basket.html">Пусто</a>
+                <a class="site-basket" href="basket.html">2 товара</a>
               </li>
             </ul>
           </div>
@@ -375,7 +375,7 @@
         <div class="pagination">
           <ul class="pagination-list style">
             <li><img src="/img/arrow-left.png"></li>
-            <li class="pagination-item"><a href="#">1</a></li>
+            <li class="pagination-item pagination-one"><a href="#">1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
             <li class="pagination-item"><a href="#">4</a></li>
@@ -439,19 +439,43 @@
       </div>
     </section>
 
-    <!-- <section class="modal modal-login">
-      <h2 class="visually-hidden">Обратная связь</h2>
+    <section class="modal-basket">
+      <h2 class="visually-hidden">Корзина</h2>
 
-      <h3>Мы обязательно вам ответим!</h3>
-      <button type="button" class="modal-login-close"></button>
-      <form class="feedback-form" action="https://mail.yandex.ru/" method="POST">
-        <input class="input" type="text" name="login" placeholder="Имя Фамилия"><br>
-        <input class="input" type="text" name="email" placeholder="email@example.com"><br>
-        <textarea class="input" type="text" name="field" placeholder="В свободной форме"></textarea><br>
-        <button class="button feedback-button" type="submit">Отправить</button>
-      </form>
+      <div class="basket-full">
+        <div class="ice-list">
+          <div class="position-item">
+            <div class="del">
+              <img src="/svg/cross-small.svg" width="11" height="11" alt="Крестик закрытия">
+              <img src="/img/ice-little-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+              <p>Пломбир с апельсиновым джемом</p>
+            </div>
+            <p>1,5 кг x <span>200 руб.</span></p>
+            <p>300 руб.</p>
+          </div>
+          <div class="position-item">
+            <div class="del">
+              <img src="/svg/cross-small.svg" width="11" height="11" alt="Крестик закрытия">
+              <img src="/img/ice-little-2.png" width="33" height="33"
+              alt="Клубничный пломбир с посыпкой из белого шоколада">
+              <p>Клубничный пломбир с посыпкой <br>из белого шоколада</p>
+            </div>
+            <p>1,5 кг x <span>300 руб.</span></p>
+            <p>450 руб.</p>
+          </div>
+        </div>
+        
+        <div class="ice-price">
+          <div class="price-final">
+            <p>Итого: 750 руб.</p>
+          </div>
+          <div class="price-button">
+            <button type="button" class="place-order button">Оформить заказ</button>
+          </div>
+        </div>
+      </div>      
       
-    </section> -->
+    </section>
 
     <script src="/js/site-catalog.js"></script>
 

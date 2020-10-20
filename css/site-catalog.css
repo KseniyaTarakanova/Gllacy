@@ -436,12 +436,13 @@ fieldset {
 .pagination-item a {
     text-decoration: none;
     line-height: 18px;
+    padding: 4px 9px;
 }
 
 .pagination-item a:hover {
     color: white;
     line-height: 18px;
-    padding: 4px 8.5px;
+    padding: 4px 9px;
     background-color: #9db3a7;    
     border-radius: 50%;
 }
@@ -783,8 +784,9 @@ input[type="checkbox"]:checked + label span {
 }
 
 .modal-menu {
+    position: absolute;
     top: 60px;
-    left: 18%;
+    left: 17.6%;
 
     line-height: 16px;
     width: 143px;
@@ -1017,16 +1019,81 @@ input[type="checkbox"]:checked + label span {
     box-shadow: 0 1px 3px 0 #c9685d;
 }
 
+.modal-basket {
+    position: absolute;
+    top: 60px;
+    right: 54px;
+    width: 540px;
+    height: 245px;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.ice-list {
+    display: flex;
+    flex-direction: column;
+    
+    width: 510px;
+    padding: 0;
+    padding-top: 20px;
+    margin: 0 20px 0 15px;
+    color: #323232;
+    border-bottom: 1px solid #cacac7;
+}
+
+.ice-list p {
+    margin: 0;
+}
+
+.position-item {
+    display: flex;
+    justify-content: space-between;
+    min-height: 35px;
+    align-items: center;
+    margin-bottom: 20px;    
+}
+
+.position-item span {
+    color: #999999;
+}
+
+.del {
+    display: flex;
+    justify-content: space-between;
+    width: 288px;
+    align-items: center;
+}
+
+.ice-price {
+    margin: 0 15px 20px 15px;
+    text-align: right;
+}
+
+.price-final p {
+    color: #323232;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.place-order {
+    padding: 10px 20px;
+    margin: 0;
+}
+
 .modal-input,
 .modal-loupe,
 .modal-login,
-.sub-menu {
+.sub-menu,
+.modal-basket {
     display: none;
 }
-
-/* .login-link:hover .modal-input {
-    display: block;
-} */
 
 @keyframes bounce {
     0% { transform: translateY(-2000px); }
